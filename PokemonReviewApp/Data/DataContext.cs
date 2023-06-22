@@ -10,6 +10,7 @@ namespace PokemonReviewApp.Data
             
         }
 
+        // Tables
         public DbSet<Category> Categories { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Owner> Owners { get; set; }
@@ -19,6 +20,7 @@ namespace PokemonReviewApp.Data
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Reviewer> Reviewers { get; set; }
 
+        // Builds jointables
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // set the keys in the join table
